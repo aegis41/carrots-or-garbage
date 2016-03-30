@@ -20,6 +20,7 @@
     <sprites name="Carrots or Garbage">
       <sprite>sprites\sprBtnSmall</sprite>
     </sprites>
+    <sprite>sprites\sprCarrots</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

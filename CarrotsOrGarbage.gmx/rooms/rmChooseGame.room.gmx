@@ -55,6 +55,8 @@
     <instance objName="objBtnBack" x="32" y="608" name="inst_8E2FF1D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBtnLuckyGrid" x="32" y="416" name="inst_DBA79887" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBtnMontyHaul" x="32" y="224" name="inst_0AB1AA89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGlobal" x="0" y="0" name="inst_647AE5C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stats" x="544" y="64" name="inst_D7241451" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

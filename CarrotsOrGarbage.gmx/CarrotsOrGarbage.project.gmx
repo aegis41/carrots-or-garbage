@@ -43,6 +43,8 @@
     <objects name="Carrots or Garbage">
       <object>objects\objBtnSmall</object>
     </objects>
+    <object>objects\objGlobal</object>
+    <object>objects\obj_stats</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>

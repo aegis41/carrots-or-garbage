@@ -22,5 +22,15 @@
   <frames>
     <frame index="0">images\sprBtnSmall_0.png</frame>
     <frame index="1">images\sprBtnSmall_1.png</frame>
+    <frame index="2">images\sprBtnSmall_2.png</frame>
+    <frame index="3">images\sprBtnSmall_3.png</frame>
+    <frame index="4">images\sprBtnSmall_4.png</frame>
+    <frame index="5">images\sprBtnSmall_5.png</frame>
+    <frame index="6">images\sprBtnSmall_6.png</frame>
+    <frame index="7">images\sprBtnSmall_7.png</frame>
+    <frame index="8">images\sprBtnSmall_8.png</frame>
+    <frame index="9">images\sprBtnSmall_9.png</frame>
+    <frame index="10">images\sprBtnSmall_10.png</frame>
+    <frame index="11">images\sprBtnSmall_11.png</frame>
   </frames>
 </sprite>

@@ -19,13 +19,17 @@
     <sprite>sprites\sprBtnBack</sprite>
     <sprites name="Carrots or Garbage">
       <sprite>sprites\sprBtnSmall</sprite>
+      <sprite>sprites\sprBtnCarrots</sprite>
+      <sprite>sprites\sprBtnGarbage</sprite>
+      <sprite>sprites\sprFrame</sprite>
     </sprites>
     <sprite>sprites\sprCarrots</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\csrMouseHover.gml</script>
+    <script>scripts\scrMouseHover.gml</script>
+    <script>scripts\scrFlip.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objBtnBack</object>
@@ -42,6 +46,9 @@
     </objects>
     <objects name="Carrots or Garbage">
       <object>objects\objBtnSmall</object>
+      <object>objects\objBtnCarrots</object>
+      <object>objects\objBtnGarbage</object>
+      <object>objects\objFrame</object>
     </objects>
     <object>objects\objGlobal</object>
     <object>objects\obj_stats</object>

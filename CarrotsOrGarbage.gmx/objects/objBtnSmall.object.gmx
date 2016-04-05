@@ -56,7 +56,6 @@ if (canPress = true) {
         global.money -= betAmount;
         global.currentBet = betAmount;
         image_index = image_index + 1;
-        show_message(instance_id);
     }
 }
 </string>

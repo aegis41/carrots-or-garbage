@@ -19,7 +19,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -28,7 +28,9 @@
             <string>{
     draw_text(x, y, "Money: " + string(global.money));
     draw_text(x, y + 16, "Current bet: " + string(global.currentBet));
-    draw_text(x, y + 32, "Stakes: " + string(global.currentStakes));
+    draw_text(x, y + 32, "Current bet button: " + string(global.currentBetButton));
+    draw_text(x, y + 48, "Stakes: " + string(global.currentStakes));
+    draw_text(x, y + 64, "Current flip: " + string(global.currentFlip));
 }
 </string>
           </argument>

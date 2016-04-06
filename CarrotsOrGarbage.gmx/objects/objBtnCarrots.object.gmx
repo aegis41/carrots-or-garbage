@@ -69,13 +69,19 @@
             <kind>1</kind>
             <string>/// I bet on carrots
 var flip = random_range(1,100);
-if (global.currentBet) {
-    global.money -= global.currentBet;
-    if (flip &lt;= 50) {
-        draw_text(objFrame.x + 50, objFrame.y + 50, "Carrots");
-    } else {
-        draw_text(objFrame.x + 50, objFrame.y + 50, "Garbage");
-    }
+if(global.money &gt;= global.currentBet){
+    if (global.currentBet) {
+        global.money -= global.currentBet;
+        global.currentFlip = flip;
+        if (flip &lt;= 50) {
+            objResult.result = "Carrots!!!";
+            draw_sprite(sprCarrots, 0, objResult.x, objResult.y);
+            global.money += global.currentBet * 2;
+        } else {
+            objResult.result = "Garbage!!!  :(";
+            draw_sprite(sprGargbage, 0, objResult.x, objResult.y);
+        }
+     }
  }
 </string>
           </argument>

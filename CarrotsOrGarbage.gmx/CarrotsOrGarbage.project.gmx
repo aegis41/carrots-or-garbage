@@ -24,6 +24,7 @@
       <sprite>sprites\sprFrame</sprite>
     </sprites>
     <sprite>sprites\sprCarrots</sprite>
+    <sprite>sprites\sprGargbage</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -49,6 +50,7 @@
       <object>objects\objBtnCarrots</object>
       <object>objects\objBtnGarbage</object>
       <object>objects\objFrame</object>
+      <object>objects\objResult</object>
     </objects>
     <object>objects\objGlobal</object>
     <object>objects\obj_stats</object>

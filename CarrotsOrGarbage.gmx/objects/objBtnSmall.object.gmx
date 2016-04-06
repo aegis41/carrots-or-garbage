@@ -53,9 +53,9 @@ betAmount = 0;
             <string>/// bet the money!
 if (canPress = true) {
     if (global.money &gt;= betAmount) {
-        global.money -= betAmount;
         global.currentBet = betAmount;
-        image_index = image_index + 1;
+        global.currentBetButton = id;
+        // image_index = image_index + 1;
     }
 }
 </string>

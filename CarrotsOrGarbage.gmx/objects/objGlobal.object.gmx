@@ -28,7 +28,10 @@
             <string>{
     global.money = 10;
     global.currentBet = 0;
+    global.currentBetButton = "";
     global.currentStakes = 0;
+    global.currentFlip = 0;
+    global.result = "";
 }
 </string>
           </argument>

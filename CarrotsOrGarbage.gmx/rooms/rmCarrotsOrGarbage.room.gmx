@@ -104,12 +104,12 @@ global.currentStakes = 2;</code>
     <instance objName="objBtnSmall" x="384" y="160" name="objBtnSmall_bet10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBtnSmall" x="544" y="160" name="objBtnSmall_bet50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBtnSmall" x="704" y="160" name="objBtnSmall_bet100" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objGlobal" x="0" y="0" name="inst_27B2BF27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stats" x="704" y="32" name="inst_73A4B28D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBtnBack" x="736" y="672" name="inst_7C1D169C" locked="0" code="" scaleX="0.595348834991455" scaleY="0.463768124580383" colour="4294967295" rotation="0"/>
     <instance objName="objBtnCarrots" x="64" y="320" name="inst_808B8DC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBtnGarbage" x="512" y="320" name="inst_2A0BFB81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFrame" x="320" y="480" name="inst_CADF492B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objResult" x="384" y="576" name="inst_2147CA0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -73,6 +73,7 @@ if(global.money &gt;= global.currentBet){
     var bet = "carrots";
     if (global.currentBet) {
         global.money -= global.currentBet;
+        global.totalBet += global.currentBet;
         global.currentFlip = flip(1, 100);
         result = get_result(1, global.currentFlip);
         objResult.result = result;

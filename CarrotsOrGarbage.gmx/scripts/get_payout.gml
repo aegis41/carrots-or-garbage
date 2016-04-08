@@ -6,6 +6,9 @@ var result = argument2;
 if (game == 1) {
     if(bet == result) {
         payout = global.currentBet * global.currentStakes;
+        global.wins++;
+    } else {
+        global.losses++;
     }
 } else if (game = 2) {
 

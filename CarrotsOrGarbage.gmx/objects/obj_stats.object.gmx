@@ -28,9 +28,13 @@
             <string>{
     draw_text(x, y, "Money: " + string(global.money));
     draw_text(x, y + 16, "Current bet: " + string(global.currentBet));
-    draw_text(x, y + 32, "Current bet button: " + string(global.currentBetButton));
-    draw_text(x, y + 48, "Stakes: " + string(global.currentStakes));
-    draw_text(x, y + 64, "Current flip: " + string(global.currentFlip));
+    draw_text(x, y + 32, "Stakes: " + string(global.currentStakes));
+    draw_text(x, y + 48, "Current flip: " + string(global.currentFlip));
+    draw_text(x, y + 64, "Total flips: " + string(global.totalFlips));
+    draw_text(x, y + 80,"Total Carrots: " + string(global.numCarrots));
+    draw_text(x, y + 96, "Total Garbage: " + string(global.numGarbage));
+    draw_text(x, y + 112, "Total bet: " + string(global.totalBet));
+    draw_text(x, y + 128, "Wins / Losses: " + string(global.wins) + " / " + string(global.losses));
 }
 </string>
           </argument>

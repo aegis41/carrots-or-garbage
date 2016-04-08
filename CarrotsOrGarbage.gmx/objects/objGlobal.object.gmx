@@ -32,6 +32,12 @@
     global.currentStakes = 0;
     global.currentFlip = 0;
     global.result = "";
+    global.numCarrots = 0;
+    global.numGarbage = 0;
+    global.totalBet = 0;
+    global.wins = 0;
+    global.losses = 0;
+    global.totalFlips = 0;
 }
 </string>
           </argument>

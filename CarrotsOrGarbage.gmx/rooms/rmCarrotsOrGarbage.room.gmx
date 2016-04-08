@@ -16,41 +16,46 @@
 
 with (objBtnSmall_bet01) {
     betAmount = 1;
+    imgIdx = 0;
     image_speed = 0;
-    image_index = 0;
-    if (global.money &gt; betAmount) {
+    image_index = imgIdx;
+    if (global.money &gt;= betAmount) {
         canPress = true;
     }
 }
 with (objBtnSmall_bet05) {
     betAmount = 5;
+    imgIdx = 2;
     image_speed = 0;
-    image_index = 2;
-    if (global.money &gt; betAmount) {
+    image_index = imgIdx;
+    if (global.money &gt;= betAmount) {
         canPress = true;
     }
 }
 with (objBtnSmall_bet10) {
     betAmount = 10;
+    imgIdx = 4;
     image_speed = 0;
-    image_index = 4;
-    if (global.money &gt; betAmount) {
+    image_index = imgIdx;
+    if (global.money &gt;= betAmount) {
         canPress = true;
     }
 }
 with (objBtnSmall_bet50) {
     betAmount = 50;
+    imgIdx = 6;
     image_speed = 0;
-    image_index = 6;
-    if (global.money &gt; betAmount) {
+    image_index = imgIdx;
+    if (global.money &gt;= betAmount) {
         canPress = true;
     }
 }
 with (objBtnSmall_bet100) {
     betAmount = 100;
+    imgIdx = 8;
     image_speed = 0;
-    image_index = 8;
-    if (global.money &gt; betAmount) {
+    image_index = imgIdx;
+    if (global.money &gt;= betAmount) {
         canPress = true;
     }
 }

@@ -30,7 +30,11 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrMouseHover.gml</script>
-    <script>scripts\scrFlip.gml</script>
+    <script>scripts\flip.gml</script>
+    <script>scripts\get_result.gml</script>
+    <script>scripts\get_payout.gml</script>
+    <script>scripts\canBet.gml</script>
+    <script>scripts\clearBetButtons.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objBtnBack</object>

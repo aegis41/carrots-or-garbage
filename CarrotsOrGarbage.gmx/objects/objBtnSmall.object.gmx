@@ -28,6 +28,8 @@
             <string>/// set the vars
 canPress = false;
 betAmount = 0;
+imgIdx = 0;
+isCurrentbet = false;
 </string>
           </argument>
         </arguments>
@@ -55,7 +57,9 @@ if (canPress = true) {
     if (global.money &gt;= betAmount) {
         global.currentBet = betAmount;
         global.currentBetButton = id;
-        // image_index = image_index + 1;
+        clearBetButtons();
+        isCurrentbet = true;
+        image_index = imgIdx + 1;
     }
 }
 </string>

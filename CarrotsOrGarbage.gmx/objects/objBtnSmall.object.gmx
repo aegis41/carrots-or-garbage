@@ -30,6 +30,7 @@ canPress = false;
 betAmount = 0;
 imgIdx = 0;
 isCurrentbet = false;
+
 </string>
           </argument>
         </arguments>

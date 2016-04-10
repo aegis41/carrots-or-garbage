@@ -25,6 +25,9 @@
     </sprites>
     <sprite>sprites\sprCarrots</sprite>
     <sprite>sprites\sprGargbage</sprite>
+    <sprites name="Monty Haul">
+      <sprite>sprites\sprDoor</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -58,11 +61,15 @@
     </objects>
     <object>objects\objGlobal</object>
     <object>objects\obj_stats</object>
+    <objects name="Monty Haul">
+      <object>objects\objDoor</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
     <room>rooms\rmChooseGame</room>
     <room>rooms\rmCarrotsOrGarbage</room>
+    <room>rooms\rmMontyHaul</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

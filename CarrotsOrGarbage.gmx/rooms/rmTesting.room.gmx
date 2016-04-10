@@ -17,12 +17,20 @@ betButtonVals[1] = 5;
 betButtonVals[2] = 10;
 betButtonVals[3] = 50;
 betButtonVals[4] = 100;
+var startx = 32;
+var starty = 64;
+var xdist = 160;
+
+var inst = instance_find(objBtnSmall, 0);
+
+inst.betAmount = betButtonVals[0];
 
 if instance_exists(objBtnSmall) {
-    with(objBtnSmall) {
-        image_speed = 0;
-        show_message(betButtonVals);
-        i++;
+    for(i = 0; i &lt; array_length_1d(betButtonVals); i++) {
+        var inst = instance_create(startx + xdist * i, starty, objBtnSmall);
+        inst.image_speed = 0;
+        inst.image_index = 10;
+        inst.betAmount = betButtonVals[i];
     }
 }</code>
   <enableViews>0</enableViews>
@@ -66,12 +74,8 @@ if instance_exists(objBtnSmall) {
   </views>
   <instances>
     <instance objName="objBtnQuit" x="192" y="320" name="inst_DBC221E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="32" y="64" name="inst_44F964A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="192" y="64" name="inst_CBB1A044" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="352" y="64" name="inst_048A5C41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="512" y="64" name="inst_4C5417FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="672" y="64" name="inst_62F956BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="96" y="-64" name="inst_4F5BD21D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBtnSmall" x="768" y="320" name="inst_942FC2CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBtnSmall" x="-64" y="288" name="inst_020C6D03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

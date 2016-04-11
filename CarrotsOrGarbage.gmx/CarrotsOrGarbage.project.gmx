@@ -66,11 +66,11 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmTesting</room>
     <room>rooms\rmMenu</room>
     <room>rooms\rmChooseGame</room>
     <room>rooms\rmCarrotsOrGarbage</room>
     <room>rooms\rmMontyHaul</room>
+    <room>rooms\rmTesting</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

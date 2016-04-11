@@ -12,8 +12,29 @@
   <showcolour>-1</showcolour>
   <code>/// create the room
 
-// set up the buttons
+var i = 0;
+betButtonVals[4] = 0;
+betButtonVals[0] = 1;
+betButtonVals[1] = 5;
+betButtonVals[2] = 10;
+betButtonVals[3] = 50;
+betButtonVals[4] = 100;
+var startx = 32;
+var starty = 160;
+var xdist = 160;
 
+for(i = 0; i &lt; array_length_1d(betButtonVals); i++) {
+    var inst = instance_create(startx + xdist * i, starty, objBtnSmall);
+    inst.image_speed = 0;
+    inst.image_index = 10;
+    inst.betAmount = betButtonVals[i];
+    if (global.money &gt;= inst.betAmount) {
+        inst.canPress = true;
+    }
+}
+
+// set up the buttons
+/*
 with (objBtnSmall_bet01) {
     betAmount = 1;
     imgIdx = 0;
@@ -59,6 +80,7 @@ with (objBtnSmall_bet100) {
         canPress = true;
     }
 }
+*/
 
 // set the stakes
 
@@ -104,11 +126,6 @@ global.currentStakes = 2;</code>
   </views>
   <instances>
     <instance objName="objCarrotsOrGarbage" x="32" y="32" name="inst_F19278AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="32" y="160" name="objBtnSmall_bet01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="192" y="160" name="objBtnSmall_bet05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="352" y="160" name="objBtnSmall_bet10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="512" y="160" name="objBtnSmall_bet50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="672" y="160" name="objBtnSmall_bet100" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stats" x="800" y="32" name="inst_73A4B28D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBtnCarrots" x="64" y="320" name="inst_808B8DC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBtnGarbage" x="448" y="320" name="inst_2A0BFB81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

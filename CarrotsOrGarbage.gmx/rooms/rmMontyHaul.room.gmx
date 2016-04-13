@@ -12,45 +12,26 @@
   <showcolour>-1</showcolour>
   <code>/// create the room
 
-// set up the buttons
+var i = 0;
+betButtonVals[3] = 0;
+betButtonVals[0] = 100;
+betButtonVals[1] = 500;
+betButtonVals[2] = 1000;
+betButtonVals[3] = 5000;
 
-with (objBtnSmall_bet100mh) {
-    betAmount = 100;
-    imgIdx = 0;
-    image_speed = 0;
-    image_index = imgIdx;
-    if (global.money &gt;= betAmount) {
-        canPress = true;
-    }
-}
-with (objBtnSmall_bet500) {
-    betAmount = 500;
-    imgIdx = 2;
-    image_speed = 0;
-    image_index = imgIdx;
-    if (global.money &gt;= betAmount) {
-        canPress = true;
-    }
-}
-with (objBtnSmall_bet1000) {
-    betAmount = 1000;
-    imgIdx = 4;
-    image_speed = 0;
-    image_index = imgIdx;
-    if (global.money &gt;= betAmount) {
-        canPress = true;
-    }
-}
-with (objBtnSmall_bet5000) {
-    betAmount = 5000;
-    imgIdx = 6;
-    image_speed = 0;
-    image_index = imgIdx;
-    if (global.money &gt;= betAmount) {
-        canPress = true;
-    }
-}
+var startx = 32;
+var starty = 160;
+var xdist = 160;
 
+for(i = 0; i &lt; array_length_1d(betButtonVals); i++) {
+    var inst = instance_create(startx + xdist * i, starty, objBtnSmall);
+    inst.image_speed = 0;
+    inst.image_index = 10;
+    inst.betAmount = betButtonVals[i];
+    if (global.money &gt;= inst.betAmount) {
+        inst.canPress = true;
+    }
+}
 
 // set the stakes
 
@@ -95,10 +76,6 @@ global.currentStakes = 2;</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objBtnSmall" x="32" y="160" name="objBtnSmall_bet100mh" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="192" y="160" name="objBtnSmall_bet500" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="352" y="160" name="objBtnSmall_bet1000" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBtnSmall" x="512" y="160" name="objBtnSmall_bet5000" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBtnBack" x="640" y="640" name="inst_66720332" locked="0" code="" scaleX="0.818604648113251" scaleY="0.695652186870575" colour="4294967295" rotation="0"/>
     <instance objName="objDoor" x="64" y="320" name="inst_477F8F24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDoor" x="288" y="320" name="inst_2BC28DE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

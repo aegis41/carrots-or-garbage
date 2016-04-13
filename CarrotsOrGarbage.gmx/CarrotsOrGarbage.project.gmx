@@ -33,6 +33,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrMouseHover.gml</script>
+    <script>scripts\scrMouseHoverSmall.gml</script>
     <script>scripts\flip.gml</script>
     <script>scripts\get_result.gml</script>
     <script>scripts\get_payout.gml</script>

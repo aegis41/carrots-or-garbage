@@ -1,5 +1,5 @@
 ///clearBetButtons()
 with(objBtnSmall) {
     isCurrentbet = false;
-    image_index = imgIdx;
+    image_index = 0;
 }

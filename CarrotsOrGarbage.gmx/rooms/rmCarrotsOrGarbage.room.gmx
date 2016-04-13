@@ -33,57 +33,6 @@ for(i = 0; i &lt; array_length_1d(betButtonVals); i++) {
     }
 }
 
-// set up the buttons
-/*
-with (objBtnSmall_bet01) {
-    betAmount = 1;
-    imgIdx = 0;
-    image_speed = 0;
-    image_index = imgIdx;
-    if (global.money &gt;= betAmount) {
-        canPress = true;
-    }
-}
-with (objBtnSmall_bet05) {
-    betAmount = 5;
-    imgIdx = 2;
-    image_speed = 0;
-    image_index = imgIdx;
-    if (global.money &gt;= betAmount) {
-        canPress = true;
-    }
-}
-with (objBtnSmall_bet10) {
-    betAmount = 10;
-    imgIdx = 4;
-    image_speed = 0;
-    image_index = imgIdx;
-    if (global.money &gt;= betAmount) {
-        canPress = true;
-    }
-}
-with (objBtnSmall_bet50) {
-    betAmount = 50;
-    imgIdx = 6;
-    image_speed = 0;
-    image_index = imgIdx;
-    if (global.money &gt;= betAmount) {
-        canPress = true;
-    }
-}
-with (objBtnSmall_bet100) {
-    betAmount = 100;
-    imgIdx = 8;
-    image_speed = 0;
-    image_index = imgIdx;
-    if (global.money &gt;= betAmount) {
-        canPress = true;
-    }
-}
-*/
-
-// set the stakes
-
 global.currentStakes = 2;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

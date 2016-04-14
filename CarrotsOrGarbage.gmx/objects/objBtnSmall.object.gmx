@@ -127,7 +127,15 @@ if (canPress = true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x + 50, y + 50, betAmount);
+            <string>draw_set_font(fontButton);
+if (betAmount &lt; 10) {
+    xshift = 56;
+} else if (betAmount &lt; 100) {
+    xshift = 44;
+} else {
+    xshift = 36;
+}
+draw_text(x + xshift, y + 40, betAmount);
 </string>
           </argument>
         </arguments>
